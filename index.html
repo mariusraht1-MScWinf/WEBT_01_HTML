@@ -1,0 +1,39 @@
+<html>
+  <body>
+    <h1>Teilleistungen in WebT</h1>
+    <table>
+      <thead>
+        <th colspan="2">Themen</th>
+        <th>Abgabe</th>
+        <th>Teilleistung</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>Vorplanungen</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </td>
+          <td>Alles in<br />Aufgabe 1</td>
+          <td>29. Mai</td>
+          <td>TL1</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Neue Teilleistung hinzufügen:</h2>
+    <form action="form.php" method="POST">
+      <label for="teilleistung">Teilleistungsnummer</label
+      ><select id="teilleistung">
+        <option value="tl1">Teilleistung 1</option>
+        <option value="tl2">Teilleistung 2</option>
+        <option value="tl3">Teilleistung 3</option></select
+      ><br />
+      <label for="abgabe">Abgabe</label>
+      <input type="date" id="abgabe" /><br />
+      <label>Themenliste:</label>
+      <textarea id="themenliste" rows="5" cols="20"></textarea>
+    </form>
+  </body>
+</html>
